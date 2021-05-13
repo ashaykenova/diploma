@@ -1,0 +1,850 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffc752 !important;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a:hover {
+    text-decoration: none;
+}
+label {
+    margin-bottom: 0 !important;
+}
+/* Элементы головной навигации */
+header {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 99;
+}
+.main-navigation {
+    margin-bottom: 0;
+}
+.main-navigation, .social-nav {
+    display: flex;
+
+}
+.main-navigation li {
+    text-transform: uppercase;
+    width: auto;
+    margin: auto;
+    transition: all 1s;
+    font-weight: 900;
+}
+.main-navigation li a, footer a {
+    color: #fff;
+    transition: all 1s;
+}
+.social-nav li a {
+    color: #101010;
+    transition: all 1s;
+}
+.social-nav li i {
+    font-weight: 900;
+}
+.main-navigation li a:hover, .social-nav li:hover a, footer a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+.logo {
+    text-align: center;
+}
+.logo img {
+    max-width: 80%;
+}
+.social {
+    display: flex;
+    justify-content: flex-end;
+}
+.social-nav li {
+    position: relative;
+    padding: 10px 17px;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+/* Элементы головной навигации */
+/* Фиксированный хедер */
+.headerfix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 99;
+}
+.headerfix .logo img {
+    max-width: 50%;
+}
+.headerfix .main-navigation li a {
+    color: #101010;
+}
+.headerfix .social-nav li {
+    background-color: #101010;
+}
+.headerfix .social-nav li a {
+    color: #fff;
+}
+/* Фиксированный хедер */
+.main-image {
+    position: relative;
+    height: 800px;
+    max-height: 100%;
+    background-image: url(../images/banner-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.second-image {
+    position: relative;
+    height: 600px;
+    max-height: 100%;
+}
+.tourBg {
+    background-image: url(../images/IMG_20190814_194537-.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.excBg {
+    background-image: url(../images/IMG_20200408_170519-.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.kolBg {
+    background-image: url(../images/IMG_20190629_133643.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+.main-image-caption {
+    position: absolute;
+    top: calc(50% - 50px);
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    left: 0;
+    right: 0;
+    width: 70%;
+    margin: auto;
+}
+.main-image-caption h2, .tour-caption h2 {
+    font-weight: 900;
+    font-size: 2.4em;
+}
+.main-image-caption p, .tour-caption p {
+    font-size: 1.3em;
+    font-weight: 300;
+}
+.main-image-caption form {
+    position: relative;
+    display: flex;
+
+}
+.form-group {
+    position: relative;
+    width: calc(100%/4);
+    margin: auto;
+}
+.form-group i {
+    position: absolute;
+    z-index: 9;
+    left: 5%;
+    top: 5%;
+}
+.form-group input, .form-group select {
+    width: 90%;
+    margin: auto;
+    min-height: 70px;
+    padding: 0 25px;
+    border-radius: 7px;
+}
+.form-group button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    width: 90%;
+    margin-left: 15px;
+    min-height: 70px;
+    padding: 0 25px;
+    border-radius: 7px;
+    justify-content: center;
+}
+.form-group button span {
+    padding-right: 10px;
+}
+section {
+    padding: 4% 0;
+}
+.whym {
+    width: calc(100%/3 - 50px);
+    margin: 20px auto;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    background-color:  #fff;
+}
+.whym img {
+    max-width: 100%;
+    border-radius: 7px 7px 0 0 ;
+}
+.whym .whym-caption {
+    padding: 15px;
+}
+.tour {
+    position: relative;
+    height: 600px;
+    max-height: 100%;
+    background-image: url(../images/DSC_0086-min.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50%;
+}
+.tour-caption {
+    position: absolute;
+    top: calc(50% - 50px);
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    left: 0;
+    right: 0;
+    width: 50%;
+    margin: auto;
+}
+.tour-caption button {
+    padding: 10px 25px;
+    border: none;
+    background-color: #22b2ea;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+.modal-content {
+    background-color: #fff !important;
+}
+.tour-form-text {
+    cursor: pointer;
+}
+.tour-form input {
+    max-width: 30px;
+}
+.modal-title-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.modal-right {
+    font-size: 1rem !important;
+    color: #101010 !important;
+    line-height: 1.3 !important;
+}
+.hidden {
+    display: none;
+}
+/* datepicker
+----------------------------------*/
+.ui-datepicker {
+	width: 300px;
+	padding: 0px;
+	display: none;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: 15px 10px;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	background-color: #000;
+}
+.ui-datepicker .ui-datepicker-prev{
+	left: 15px;
+    top: 25px;
+}
+.ui-datepicker .ui-datepicker-next{
+	right: 58px;
+	top: 25px;
+}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+    position: absolute;
+    left: 0%;
+    margin-left: 0px;
+    top: 50%;
+    margin-top: -7px;
+    color: #878787;
+    padding: 2px 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    line-height: 10px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: lighter;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 45%;
+	height: auto;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker th {
+	padding: 0px;
+    text-align: center;
+    font-weight: lighter;
+    border: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 5px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 12px;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto;
+	background-color: #fff;
+	border: 1px solid #eee;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+	float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+	width: 95%;
+	margin: 0 auto .4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+	width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+	width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+	width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+	clear: left;
+}
+.ui-datepicker-row-break {
+	clear: both;
+	width: 100%;
+	font-size: 0;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+	direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+	right: 2px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+	left: 2px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+	right: 1px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+	left: 1px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+	clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+	float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+	float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+	border-right-width: 0;
+	border-left-width: 1px;
+}
+
+/* custom */
+.ui-datepicker-today a { color: #fff !important; }
+.ui-datepicker a { color: #fff; }
+.ui-datepicker-unselectable.ui-state-disabled { opacity: 0.3; } 
+.ui-datepicker .ui-datepicker-title { font-family: 'Open Sans'; }
+/* Стилизация выбора количества людей */
+.modal-radio-caption {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.modal-radio-caption label {
+    padding-left: 10px;
+}
+/* Стилизация выбора куда ехать */
+.modal-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.modal-checkbox-caption {
+    position: relative;
+    width: calc(100% / 4 - 20px);
+}
+.modal-checkbox-caption img {
+    max-width: 90%;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+.modal-checkbox-caption input {
+    position: absolute;
+    z-index: -1;
+}
+.modal-checkbox-caption label::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: -2%;
+    top: -2%;
+    width: 1.5em;
+    height: 1.5em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-radius: 100%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.modal-checkbox-caption input:checked ~ label::before {
+    border-color: #101010;
+    background-color: #101010;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+/* Modal form style */
+.modalForm {
+    position: relative;
+    width: 60%;
+}
+.modalForm input {
+    border: none;
+    border-bottom: 1px solid #101010;
+    width: 100%;
+    margin: 10px 0;
+}
+.modalForm button {
+    margin: 10px 0;
+}
+/* 6 причин стилизация */
+.exper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    transition: all 1s;
+}
+.exper img {
+    width: 30%;
+    margin: 20px auto;
+    display: flex;
+}
+/* Footer */
+footer {
+    position: relative;
+    background-color: #1f1f1f;
+    padding: 40px 0;
+}
+footer h5 {
+    color: #525252;
+}
+/* Tour.html */
+.tCard {
+    max-width: calc(100% / 3 - 50px);
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    border-radius: 7px;
+    transition: all 1s;
+}
+.tCard:hover {
+    box-shadow: none;
+}
+.tCard img {
+    border-radius: 7px  7px 0 0;
+    max-width: 100%;
+}
+.tCaption {
+    padding: 20px 15px;
+}
+/* Slider inside page */
+#slider {
+    position: relative;
+}
+#sliderImages {
+    position: relative;
+    text-align: center;
+}
+#sliderImages img {
+    max-width: 60%;
+}
+#sliderBtn {
+    position: absolute;
+    top: calc(50% - 50px);
+    z-index: 1;
+    width: 100%;
+}
+#sliderBtn button {
+    border: none;
+    padding: 30px 40px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    transition: all 1s;
+}
+#sliderBtn button:hover {
+    box-shadow: none;
+}
+#sliderBtn button:last-child {
+    float: right;
+}
+.active {
+    border: 1px solid rgba(0,0,0,.5);
+    border-radius: 100%;
+}
+.sliderDots {
+    display: flex;
+    width: 60%;
+    margin: 30px auto;
+}
+.sliderDots li {
+    font-size: 1.4em;
+    width: auto;
+    margin: auto;
+    padding: 2px 15px;
+    cursor: pointer;
+}
+/* В этом туре вы увидите: */
+.whatYouSee {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    align-items: center;
+}
+.whatYouSee img {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 100%;
+}
+.whatYouSee p {
+    padding-left: 20px;
+}
+.tourDays {
+    position: relative;
+}
+.tourDays span {
+    font-size: 1.3em;
+    font-weight: 900;
+    padding: 7px 15px;
+    border-radius: 100%;
+    background-color: #007bff;
+    color: #fff;
+}
+.tourDays::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    border-left: 1px dashed #101010;
+    left: 50%;
+    z-index: -1;
+}
+.tourDoing {
+    padding-left: 25px;
+    max-width: 90%;
+}
+.m-t-30 {
+    margin-top: 30px;
+}
+.absoluteSocial {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 99;
+  
+  }
+  .absoluteSocial div {
+    margin: 50px 0;
+  }
+  .absoluteSocial a {
+    font-size: 2.5em;
+    position: relative;
+    padding: 15px 25px;
+    margin-bottom: 50px;
+  }
+  .absoluteSocial i {
+    color: #fff;
+  }
+  .animate1::before, .animate1::after, .animate2::before, .animate2::after {
+    animation: 1s cubic-bezier(0.2, 0, 0.3, 1) 0s infinite alternate none running playButton;
+    background-color: rgb(0, 123, 255);
+    border-radius: 50%;
+    inset: -5px;
+    content: "";
+    opacity: 0.15;
+    position: absolute;
+    transform: scale3d(1, 1, 1);
+    transition: transform 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0s, opacity 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0s;
+    z-index: -1;
+  }
+  .animate1::after, .animate2::after {
+    inset: -14px;
+    opacity: 0.1;
+  }
+  @keyframes playButton {
+	0% {
+		opacity: 0.6;
+		transform: scale3d(0.6, 0.6, 1);
+	}
+
+	100% {
+		opacity: 0.3;
+		transform: scale3d(1, 1, 1);
+	}
+}
+.select-box {
+    position: relative;
+    width: 90%;
+    min-height: 70px;
+    margin: auto;
+}
+.select {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 70px;
+    border-radius: 7px;
+    background-color: #fff;
+}
+
+.select__head {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 25px;
+    min-height: 70px;
+    font-size: 14px;
+    display: flex;
+    line-height: 18px;
+    color: rgba(66, 67, 72, 0.8);
+    cursor: pointer;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.select__head::after {
+    width: 10px;
+    height: 6px;
+    background: #FFF url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.50495 5.78413L0.205241 1.25827C-0.0684138 0.970375 -0.0684138 0.503596 0.205241 0.215836C0.478652 -0.0719461 0.922098 -0.071946 1.19549 0.215837L5.00007 4.22052L8.80452 0.215953C9.07805 -0.0718292 9.52145 -0.0718292 9.79486 0.215953C10.0684 0.503736 10.0684 0.970492 9.79486 1.25839L5.49508 5.78425C5.35831 5.92814 5.17925 6 5.00009 6C4.82085 6 4.64165 5.928 4.50495 5.78413Z' fill='%23ED266A'/%3E%3C/svg%3E%0A") no-repeat center / cover;
+    position: absolute;
+    right: 20px;
+    bottom: 50%;
+    transform: translateY(50%);
+    content: '';
+    display: block;
+    transition: .2s ease-in;
+}
+
+.select__head.open::after {
+    transform: translateY(50%) rotate(180deg);
+}
+
+.select__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 5px;
+    max-height: 205px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #424348;
+    scrollbar-color: dark;
+    scrollbar-width: thin;
+    overscroll-behavior: contain;
+}
+
+.select__list::-webkit-scrollbar {
+    width: 7px;
+    background-color: #F8F9FA;
+    padding: 5px;
+}
+
+.select__list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+
+.select__list .select__item {
+    position: relative;
+    border-top: 1px solid rgba(224, 229, 231, 0.5);
+    padding: 10px 15px;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.select__list .select__item:hover {
+    background-color: rgba(224, 229, 231, 0.5);
+}
+.map {
+    text-align: center;
+}
+.map img {
+    max-width: 100%;
+}
+.modal-body input, .modal-body button {
+    width: 60%;
+    margin: 10px auto;
+    border-radius: 7px;
+    padding: 7px;
+}
+.modal-body button {
+    text-transform: uppercase;
+}
+.hiddenDesctop {
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .main-navigation {
+        display: none;
+        flex-wrap: wrap;
+        position: fixed;
+        background: #fff;
+        left: 0;
+        top: 0;
+    }
+    .main-navigation li a {
+        color: #101010;
+    }
+    .main-navigation li {
+        font-size: 14px;
+        width: 100%;
+        padding: 10px 15px;
+    }
+    #header .col-md-2 {
+        width: 80%;
+    }
+    #header .col-md-10 {
+        width: 20%;
+    }
+    .hiddenDesctop {
+        display: flex;
+        padding: 10px;
+        border: none;
+        background: none;
+        position: relative;
+        color: #fff;
+        font-size: 1.6em;
+        z-index: 99;
+    }
+    .headerfix .hiddenDesctop {
+        color: #101010;
+    }
+    .main-image {
+        height: 900px;
+    }
+    .second-image {
+        height: 800px;
+    }
+    .main-image-caption, .tour-caption {
+        top: 25%;
+        width: 90%;
+    }
+    .main-image-caption h2, .tour-caption h2 {
+        font-size: 1.8em;
+    }
+    .main-image-caption p, .tour-caption p {
+        font-size: 1.1em;
+    }
+    .main-image-caption form {
+        flex-wrap: wrap;
+    }
+    .form-group, .tCard {
+        width: 100%;
+        max-width: 100%;
+    }
+    .whym {
+        width: 100%;
+    }
+    .tour {
+        height: 400px;
+    }
+}
